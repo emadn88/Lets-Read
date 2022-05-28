@@ -1,0 +1,16 @@
+PODS:
+  - GlowingView (0.0.2)
+
+DEPENDENCIES:
+  - GlowingView
+
+SPEC REPOS:
+  trunk:
+    - GlowingView
+
+SPEC CHECKSUMS:
+  GlowingView: 5af33c3b517df374a6632ee1989f78f93cb7ca54
+
+PODFILE CHECKSUM: 05222caf16cc2ef07d43e3b3c7c91871e7450dd7
+
+COCOAPODS: 1.11.2
