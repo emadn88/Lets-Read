@@ -1,31 +1,49 @@
 //
-//  ST13ViewController.swift
+//  TsetViewController.swift
 //  Lets Read
 //
-//  Created by Emad Abd on 28/05/2022.
+//  Created by Emad Abd on 29/05/2022.
 //
 
 import UIKit
 import AVFoundation
 
-class ST13ViewController: UIViewController   , AVSpeechSynthesizerDelegate {
-    var player: AVAudioPlayer?
-    var speechSynthesizer = AVSpeechSynthesizer()
-    @IBOutlet var lblText: UILabel!
 
+class TsetViewController: UIViewController , AVSpeechSynthesizerDelegate {
+    
+    var player: AVAudioPlayer?
+
+    @IBOutlet var lblText: UILabel!
+    
+    var speechSynthesizer = AVSpeechSynthesizer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        Timer.scheduledTimer(timeInterval: 1,
+        speechSynthesizer.delegate = self
+        // Do any additional setup after loading the view, typically from a nib.
+//
+        Timer.scheduledTimer(timeInterval: 0.3,
             target: self,
-            selector: #selector(ST13ViewController.changeTxt),
+            selector: #selector(TsetViewController.playSound2),
             userInfo: nil,
             repeats: false)
-        
-        
 
+     
         
-     }
+        
+//        ()
+
+        let string =
+        "شَعَرَتِ الفَتَاةُ الصَّغِيرَةُ بِالتَّعَبِ  بَعْدَ تِلْكَ الرِّحْلَةِ الشَّاقَّةِ.  يَالَهَا مِنْ فَتَاةٍ رَائِعَةٍ وَشُجَاعَةٍ تُــدْعَــى..."
+        let utterance = AVSpeechUtterance(string: string)
+//        utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.Ting-Ting-compact")
+        utterance.rate = 0.45
+        utterance.pitchMultiplier = 1.3
+        utterance.volume = 0.0
+        speechSynthesizer.speak(utterance)
+        
+        
+    }
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
         let mutableAttributedString = NSMutableAttributedString(string: utterance.speechString)
@@ -37,19 +55,21 @@ class ST13ViewController: UIViewController   , AVSpeechSynthesizerDelegate {
         lblText.attributedText = NSAttributedString(string: utterance.speechString)
     }
     
- 
-    @objc func changeTxt(){
-        
-        
-        let string =  "هَلْ تَسْتَطِيعُ أَنْ تَحْزِرَ الاِسْمَ؟"
+    @IBAction func startPressed(_ sender: Any) {
+        playSound2()
+
+        let string =  "فِي صَبَاحِ أَحَدِ الأيَّامِ، اِسْتَيْقَظَتْ فَتَاةٌ صَغِيرَةٌ مِنْ نَوْمِهَا"
         let utterance = AVSpeechUtterance(string: string)
 //        utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.Ting-Ting-compact")
-        utterance.rate = 0.45
+        utterance.rate = 0.35
         utterance.pitchMultiplier = 1.3
         utterance.volume = 0.0
         speechSynthesizer.speak(utterance)
-        
-        
+    }
+    
+    
+    
+    @objc  func playSound2() {
         guard let url = Bundle.main.url(forResource: "knowName", withExtension: "mp3") else { return }
 
         do {
@@ -69,9 +89,6 @@ class ST13ViewController: UIViewController   , AVSpeechSynthesizerDelegate {
         } catch let error {
             print(error.localizedDescription)
         }
-
-        
     }
-    
-
 }
+

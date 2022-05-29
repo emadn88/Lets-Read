@@ -1164,41 +1164,6 @@
             <point key="canvasLocation" x="3801" y="1371"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="fp6-nd-udq">
-            <objects>
-                <viewController storyboardIdentifier="P6ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QNF-XG-1gT" customClass="ST13ViewController" customModule="Lets_Read" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mzn-Yb-Dmn">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16-end-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="37V-2a-wnu">
-                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sH0-5c-Sqp">
-                                <rect key="frame" x="140" y="84" width="1091" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">هَلْ تَسْتَطِيعُ أَنْ تَحْزِرَ الاِسْمَ؟
-</string>
-                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Vgj-pk-I8h"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="37V-2a-wnu" firstAttribute="top" secondItem="Mzn-Yb-Dmn" secondAttribute="top" id="Am1-m6-Duf"/>
-                            <constraint firstAttribute="bottom" secondItem="37V-2a-wnu" secondAttribute="bottom" id="J1v-qT-F84"/>
-                            <constraint firstItem="37V-2a-wnu" firstAttribute="leading" secondItem="Vgj-pk-I8h" secondAttribute="leading" id="NMy-bl-wDr"/>
-                            <constraint firstItem="37V-2a-wnu" firstAttribute="trailing" secondItem="Vgj-pk-I8h" secondAttribute="trailing" id="zdB-zE-oRm"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="66P-wW-fq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3160.7613469985358" y="2035.5468749999998"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="MO5-q2-9vx">
             <objects>
                 <viewController storyboardIdentifier="P7ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eJe-II-vgE" customClass="ST14ViewController" customModule="Lets_Read" customModuleProvider="target" sceneMemberID="viewController">
@@ -1209,33 +1174,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Hb-jU-7qi">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="شَعَرَتِ الفَتَاةُ الصَّغِيرَةُ بِالتَّعَبِ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNw-4y-o3a">
-                                <rect key="frame" x="387" y="168" width="545" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNw-4y-o3a">
+                                <rect key="frame" x="392" y="138" width="545" height="415"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="43"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" بَعْدَ تِلْكَ الرِّحْلَةِ الشَّاقَّةِ." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCi-S2-B57">
-                                <rect key="frame" x="375" y="255" width="589" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="47"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" يَالَهَا مِنْ فَتَاةٍ رَائِعَةٍ وَشُجَاعَةٍ" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b3-wm-SwO">
-                                <rect key="frame" x="387" y="330" width="521" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="37"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55q-O1-DAR">
-                                <rect key="frame" x="598" y="436" width="259" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text"> تُــدْعَــى...
+                                <string key="text">شَعَرَتِ الفَتَاةُ الصَّغِيرَةُ بِالتَّعَبِ
+
+ بَعْدَ تِلْكَ الرِّحْلَةِ الشَّاقَّةِ.
+
+
+ يَالَهَا مِنْ فَتَاةٍ رَائِعَةٍ وَشُجَاعَةٍ
+
+ تُــدْعَــى...
 </string>
-                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="48"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="43"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1366,6 +1317,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mc2-RR-Bhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4461.7862371888723" y="2035.5468749999998"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="C9r-gb-4dL">
+            <objects>
+                <viewController storyboardIdentifier="P6ViewController" id="p2m-Ie-2vD" customClass="ST12ViewController" customModule="Lets_Read" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aAp-pr-dHW">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="16-end-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="Adq-nr-228">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbh-cG-8fO">
+                                <rect key="frame" x="170" y="777" width="1025" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startPressed:" destination="p2m-Ie-2vD" eventType="touchUpInside" id="5xp-9S-R6O"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPM-9n-1dj">
+                                <rect key="frame" x="191" y="195" width="983" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">هَلْ تَسْتَطِيعُ أَنْ تَحْزِرَ الاِسْمَ؟
+</string>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4CS-do-1RO"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lbh-cG-8fO" firstAttribute="leading" secondItem="4CS-do-1RO" secondAttribute="leading" constant="170" id="ODS-Ee-VLv"/>
+                            <constraint firstItem="4CS-do-1RO" firstAttribute="trailing" secondItem="lbh-cG-8fO" secondAttribute="trailing" constant="171" id="TBb-J4-nbu"/>
+                            <constraint firstItem="4CS-do-1RO" firstAttribute="bottom" secondItem="lbh-cG-8fO" secondAttribute="bottom" constant="197" id="fUo-Xh-PCZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblText" destination="OPM-9n-1dj" id="DUd-e1-QDG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1H-49-wWE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="746"/>
         </scene>
     </scenes>
     <resources>
